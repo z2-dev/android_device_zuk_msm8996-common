@@ -134,3 +134,6 @@ sys.usb.rndis.func.name=rndis_bam
 
 # Dalvik
 dalvik.vm.dex2oat-swap=false
+
+# FRP
+ro.frp.pst=/dev/block/bootdevice/by-name/frp
