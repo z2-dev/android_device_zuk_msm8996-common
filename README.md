@@ -1,5 +1,3 @@
-Device configuration for ZUK Z2 (z2_plus).
-
-Based on the work of davidevinavil and Fedor917.
+Common device configuration for ZUK MSM8996 devices.
 
 This branch is for building LineageOS 14.1
