@@ -28,6 +28,9 @@ on boot
     write /sys/kernel/msm_thermal/zone3 "729600 729600 65 63"
     write /sys/kernel/msm_thermal/enabled 1
 
+    # disable nightmode display
+    write /sys/devices/virtual/graphics/fb0/ct_onoff 1
+
 on enable-low-power
     # Enable Adaptive LMK
     write /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk 1
