@@ -194,11 +194,6 @@ service secotad /system/bin/secotad
    user system
    group system
 
-service time_daemon /system/bin/time_daemon
-   class late_start
-   user root
-   group root
-
 service adsprpcd /system/bin/adsprpcd
    class main
    user media
