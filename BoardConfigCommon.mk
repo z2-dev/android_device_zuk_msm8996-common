@@ -183,9 +183,6 @@ TARGET_POWERHAL_VARIANT := none
 
 # RIL
 TARGET_RIL_VARIANT := caf
-
-# RIL
-TARGET_RIL_VARIANT := caf
 SIM_COUNT := 2
 
 # Recovery
