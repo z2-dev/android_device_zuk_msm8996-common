@@ -169,7 +169,7 @@ vendor/lib/libchromatix_ov8865_default_video_none.so
 vendor/lib/libchromatix_ov8865_default_video.so
 vendor/lib/libchromatix_ov8865_hfr_120_none.so
 vendor/lib/libchromatix_ov8865_hfr_120.so
-vendor/lib/libchromatix_ov8865_hfr_60_none.sos
+vendor/lib/libchromatix_ov8865_hfr_60_none.so
 vendor/lib/libchromatix_ov8865_hfr_60.so
 vendor/lib/libchromatix_ov8865_hfr_90_none.so
 vendor/lib/libchromatix_ov8865_hfr_90.so
