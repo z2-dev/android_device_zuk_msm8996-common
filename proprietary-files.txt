@@ -453,7 +453,8 @@ vendor/lib64/libimsmedia_jni.so
 vendor/lib/librcc.so
 vendor/lib/libvoice-svc.so
 vendor/lib64/libimscamera_jni.so
-
+vendor/lib64/librcc.so
+vendor/lib64/libvoice-svc.so
 
 # Init (move to device!)
 etc/init.qcom.post_boot.sh
@@ -606,6 +607,7 @@ vendor/lib64/libril-qc-ltedirectdisc.so
 vendor/lib64/libril-qc-qmi-1.so
 vendor/lib64/libril-qc-radioconfig.so
 vendor/lib64/libril-qcril-hook-oem.so
+vendor/lib64/librilqmiservices.so
 vendor/lib64/libsettings.so
 vendor/lib64/libsystem_health_mon.so
 vendor/lib/libmdmdetect.so
@@ -651,36 +653,3 @@ vendor/lib/mediadrm/libwvdrmengine.so
 bin/cnss-daemon
 bin/cnss_diag
 etc/firmware/bdwlan30.bin
-
-# Other files (todo categorize)
-etc/capability.xml
-usr/idc/usf_tsc_ext.idc
-usr/idc/usf_tsc.idc
-usr/idc/usf_tsc_ptr.idc
-vendor/etc/msm_irqbalance.conf
-vendor/etc/qcril_fancy.db
-vendor/etc/RIDL/qdss.cfg
-vendor/lib64/libCommandSvc.so
-vendor/lib64/libFidoCryptoJNI.so
-vendor/lib64/libFidoCrypto.so
-vendor/lib64/libFIDOKeyProvisioning.so
-vendor/lib64/libFidoSuiJNI.so
-vendor/lib64/libqti-at.so
-vendor/lib64/libqti-gt.so
-vendor/lib64/libqti_performance.so
-vendor/lib64/libqti-wl.so
-vendor/lib64/librcc.so
-vendor/lib64/librilqmiservices.so
-vendor/lib64/libslimclient.so
-vendor/lib64/libtzdrmgenprov.so
-vendor/lib64/libvoice-svc.so
-vendor/lib/libdisp-aba.so
-vendor/lib/libFidoCryptoJNI.so
-vendor/lib/libFidoCrypto.so
-vendor/lib/libFIDOKeyProvisioning.so
-vendor/lib/libFidoSuiJNI.so
-vendor/lib/liblqe.so
-vendor/lib/libnetmgr.so
-vendor/lib/libqct_resampler.so
-vendor/lib/libtsvideoprocess.so
-vendor/lib/libtzdrmgenprov.so
