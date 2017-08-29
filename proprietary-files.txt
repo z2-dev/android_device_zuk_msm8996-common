@@ -464,6 +464,7 @@ vendor/lib64/lib-rtpcommon.so
 vendor/lib64/lib-rtpcore.so
 vendor/lib64/lib-rtpdaemoninterface.so
 vendor/lib64/lib-rtpsl.so
+vendor/lib64/libimsmedia_jni.so
 vendor/lib/librcc.so
 vendor/lib/libvoice-svc.so
 
@@ -610,7 +611,6 @@ framework/QtiTelephonyServicelibrary.jar
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 vendor/bin/qti
 vendor/lib64/libconfigdb.so
-vendor/lib64/libimsmedia_jni.so
 vendor/lib64/liblqe.so
 vendor/lib64/libmdmdetect.so
 vendor/lib64/libnetmgr.so
