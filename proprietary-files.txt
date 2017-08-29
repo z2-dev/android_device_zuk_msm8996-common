@@ -72,6 +72,7 @@ etc/firmware/rampatch_tlv_3.0.tlv
 etc/firmware/rampatch_tlv_3.2.tlv
 
 # Camera
+bin/mm-qcamera-app
 bin/mm-qcamera-daemon
 lib/hw/camera.msm8996.so
 lib/libmm-qcamera.so
@@ -168,7 +169,7 @@ vendor/lib/libchromatix_ov8865_default_video_none.so
 vendor/lib/libchromatix_ov8865_default_video.so
 vendor/lib/libchromatix_ov8865_hfr_120_none.so
 vendor/lib/libchromatix_ov8865_hfr_120.so
-vendor/lib/libchromatix_ov8865_hfr_60_none.so
+vendor/lib/libchromatix_ov8865_hfr_60_none.sos
 vendor/lib/libchromatix_ov8865_hfr_60.so
 vendor/lib/libchromatix_ov8865_hfr_90_none.so
 vendor/lib/libchromatix_ov8865_hfr_90.so
@@ -178,33 +179,15 @@ vendor/lib/libchromatix_ov8865_snapshot.so
 vendor/lib/libchromatix_ov8865_video_full.so
 vendor/lib/libchromatix_ov8865_zsl_preview.so
 vendor/lib/libchromatix_ov8865_zsl_video.so
-vendor/lib/libchromatix_s5k2m8sx_common.so
-vendor/lib/libchromatix_s5k2m8sx_cpp_hfr_120.so
-vendor/lib/libchromatix_s5k2m8sx_cpp_hfr_60.so
-vendor/lib/libchromatix_s5k2m8sx_cpp_hfr_90.so
-vendor/lib/libchromatix_s5k2m8sx_cpp_liveshot.so
-vendor/lib/libchromatix_s5k2m8sx_cpp_preview.so
-vendor/lib/libchromatix_s5k2m8sx_cpp_snapshot.so
-vendor/lib/libchromatix_s5k2m8sx_cpp_video.so
-vendor/lib/libchromatix_s5k2m8sx_default_video.so
-vendor/lib/libchromatix_s5k2m8sx_hfr_120.so
-vendor/lib/libchromatix_s5k2m8sx_hfr_60.so
-vendor/lib/libchromatix_s5k2m8sx_hfr_90.so
-vendor/lib/libchromatix_s5k2m8sx_liveshot.so
-vendor/lib/libchromatix_s5k2m8sx_postproc.so
-vendor/lib/libchromatix_s5k2m8sx_preview.so
-vendor/lib/libchromatix_s5k2m8sx_snapshot.so
 
 # Camera configs
-etc/camera/msm8996_camera.xml
 etc/camera/ov8865_chromatix.xml
-etc/camera/s5k2m8sx_chromatix.xml
 
 # Camera firmware
-etc/firmware/cpp_firmware_v1_10_0.fw
 etc/firmware/cpp_firmware_v1_1_1.fw
-etc/firmware/cpp_firmware_v1_12_0.fw
 etc/firmware/cpp_firmware_v1_1_6.fw
+etc/firmware/cpp_firmware_v1_10_0.fw
+etc/firmware/cpp_firmware_v1_12_0.fw
 etc/firmware/cpp_firmware_v1_2_0.fw
 etc/firmware/cpp_firmware_v1_4_0.fw
 etc/firmware/cpp_firmware_v1_5_0.fw
@@ -469,6 +452,8 @@ vendor/lib64/lib-rtpsl.so
 vendor/lib64/libimsmedia_jni.so
 vendor/lib/librcc.so
 vendor/lib/libvoice-svc.so
+vendor/lib64/libimscamera_jni.so
+
 
 # Init (move to device!)
 etc/init.qcom.post_boot.sh
