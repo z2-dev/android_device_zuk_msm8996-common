@@ -509,6 +509,7 @@
         <item>"/system/framework/oat/arm64/services.odex"</item>
         <item>"/system/framework/arm64/boot.oat"</item>
         <item>"/system/framework/arm64/boot-core-libart.oat"</item>
+        <item>"/data/dalvik-cache/arm64/system@framework@services.jar@classes.dex"</item>
     </string-array>
 
     <!-- Enable overlay for all location components. -->
@@ -517,4 +518,8 @@
 
     <!-- Disable button backlight settings. -->
     <integer name="config_buttonBrightnessSettingDefault">0</integer>
+
+    <!-- Whether notify fingerprint client of successful cancelled authentication -->
+    <bool name="config_notifyClientOnFingerprintCancelSuccess">true</bool>
+
 </resources>
