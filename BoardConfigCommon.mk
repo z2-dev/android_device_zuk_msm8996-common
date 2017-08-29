@@ -28,13 +28,8 @@ VENDOR_PATH := device/zuk/msm8996-common
 
 TARGET_SPECIFIC_HEADER_PATH := $(VENDOR_PATH)/include
 
-
 # Use Snapdragon LLVM, if available
 TARGET_USE_SDCLANG := true
-LOCAL_SDCLANG := true
-SDCLANG := true
-SDCLANG_PATH := prebuilts/clang/linux-x86/host/sdclang-3.8/bin
-SDCLANG_LTO_DEFS := device/qcom/common/sdllvm-lto-defs.mk
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := msm8996
