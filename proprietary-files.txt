@@ -142,6 +142,7 @@ vendor/lib/libqomx_jpegenc.so
 vendor/lib/libseemore.so
 vendor/lib/libtm_interface.so
 vendor/lib/libtrueportrait.so
+vendor/lib/libtsvideoprocess.so
 vendor/lib/libubifocus.so
 vendor/lib64/libmmcamera_dbg.so
 vendor/lib64/libmmcamera_tintless_algo.so
