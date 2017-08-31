@@ -93,14 +93,12 @@ vendor/lib/libmmcamera_eztune_module.so
 vendor/lib/libmmcamera_facedetection_lib.so
 vendor/lib/libmmcamera_faceproc.so
 vendor/lib/libmmcamera_faceproc2.so
-vendor/lib/libmmcamera_gt24c08h_eeprom.so
 vendor/lib/libmmcamera_hdr_gb_lib.so
 vendor/lib/libmmcamera_hvx_add_constant.so
 vendor/lib/libmmcamera_hvx_grid_sum.so
 vendor/lib/libmmcamera_hvx_zzHDR.so
 vendor/lib/libmmcamera_imglib_faceproc_adspstub.so
 vendor/lib/libmmcamera_imglib.so
-vendor/lib/libmmcamera_onsemi_cat24c64_eeprom.so
 vendor/lib/libmmcamera_ov8856.so
 vendor/lib/libmmcamera_ov8865.so
 vendor/lib/libmmcamera_paaf_lib.so
@@ -182,6 +180,9 @@ vendor/lib/libchromatix_ov8865_zsl_video.so
 
 # Camera configs
 etc/camera/ov8865_chromatix.xml
+
+# Camera eeproms
+vendor/lib/libmmcamera_gt24c08h_eeprom.so
 
 # Camera firmware
 etc/firmware/cpp_firmware_v1_1_1.fw
