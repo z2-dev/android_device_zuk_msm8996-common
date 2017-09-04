@@ -105,6 +105,9 @@ on enable-low-power
 
     write /sys/module/lpm_levels/parameters/sleep_disabled "N"
 
+    # Starting io prefetcher service
+    start iop
+
     setprop sys.io.scheduler cfq
 
     # update cpusets now that boot is complete and we want better load balancing
