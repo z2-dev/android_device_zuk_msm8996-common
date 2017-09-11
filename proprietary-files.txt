@@ -92,7 +92,6 @@ vendor/lib/libmmcamera_hvx_zzHDR.so
 vendor/lib/libmmcamera_imglib_faceproc_adspstub.so
 vendor/lib/libmmcamera_imglib.so
 vendor/lib/libmmcamera_ov8856.so
-vendor/lib/libmmcamera_ov8865.so
 vendor/lib/libmmcamera_paaf_lib.so
 vendor/lib/libmmcamera_pdaf.so
 vendor/lib/libmmcamera_pdafcamif.so
