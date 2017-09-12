@@ -595,7 +595,9 @@ etc/data/dsi_config.xml
 etc/data/netmgr_config.xml
 etc/permissions/qcrilhook.xml
 etc/permissions/telephonyservice.xml
+etc/permissions/qti-vzw-ims-internal.xml
 -framework/qcrilhook.jar
+vendor/framework/qti-vzw-ims-internal.jar
 framework/qti-telephony-common.jar|fecb178b16b81a9a0cd213bf03784edfeec582bd
 framework/QtiTelephonyServicelibrary.jar
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
