@@ -158,6 +158,8 @@ on property:dev.bootcomplete=1
     write /dev/cpuset/foreground/cpus 0-1
     write /dev/cpuset/background/cpus 0
     write /dev/cpuset/system-background/cpus 0-1
+    # set sync wakee policy tunable
+    write /proc/sys/kernel/sched_prefer_sync_wakee_to_waker 1
 
 on property:init.svc.recovery=running
     trigger enable-low-power
