@@ -62,6 +62,4 @@ on property:init.svc.bootanim=running
     write /sys/class/leds/wled/brightness 4095
 
 on boot
-    start rmt_storage
-    start rfs_access
     write /proc/sys/kernel/sched_boost 1
