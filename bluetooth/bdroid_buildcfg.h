@@ -34,6 +34,8 @@ static inline const char* BtmGetDefaultName()
         return "ZUK Z2";
     if (strstr(product_device, "z2_row"))
         return "ZUK Z2 PRO";
+    if (strstr(product_device, "z2x"))
+        return "ZUK EDGE";
 
     // Fallback to ro.product.model
     return "";
