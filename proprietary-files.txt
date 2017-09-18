@@ -637,14 +637,7 @@ vendor/lib64/sensors.ssc.so
 bin/ssr_setup
 
 # Thermal
-vendor/bin/thermal-engine
--vendor/lib64/libthermalclient.so
-vendor/lib64/libthermalioctl.so
 -vendor/lib/libthermalclient.so
-
-# Time services
--vendor/lib64/libtime_genoff.so
--vendor/lib/libtime_genoff.so
 
 # Widevine
 vendor/lib/libWVStreamControlAPI_L3.so
