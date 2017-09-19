@@ -18,6 +18,29 @@ vendor/lib/rfsa/adsp/libvpp_frc.so
 vendor/lib/rfsa/adsp/libvpp_svc_skel.so
 vendor/lib/rfsa/adsp/us-syncproximity.so
 
+# Audio ACDB
+etc/acdbdata/Fluid/Fluid_Bluetooth_cal.acdb
+etc/acdbdata/Fluid/Fluid_General_cal.acdb
+etc/acdbdata/Fluid/Fluid_Global_cal.acdb
+etc/acdbdata/Fluid/Fluid_Handset_cal.acdb
+etc/acdbdata/Fluid/Fluid_Hdmi_cal.acdb
+etc/acdbdata/Fluid/Fluid_Headset_cal.acdb
+etc/acdbdata/Fluid/Fluid_Speaker_cal.acdb
+etc/acdbdata/Liquid/Liquid_Bluetooth_cal.acdb
+etc/acdbdata/Liquid/Liquid_General_cal.acdb
+etc/acdbdata/Liquid/Liquid_Global_cal.acdb
+etc/acdbdata/Liquid/Liquid_Handset_cal.acdb
+etc/acdbdata/Liquid/Liquid_Hdmi_cal.acdb
+etc/acdbdata/Liquid/Liquid_Headset_cal.acdb
+etc/acdbdata/Liquid/Liquid_Speaker_cal.acdb
+etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb
+etc/acdbdata/QRD/QRD_General_cal.acdb
+etc/acdbdata/QRD/QRD_Global_cal.acdb
+etc/acdbdata/QRD/QRD_Handset_cal.acdb
+etc/acdbdata/QRD/QRD_Hdmi_cal.acdb
+etc/acdbdata/QRD/QRD_Headset_cal.acdb
+etc/acdbdata/QRD/QRD_Speaker_cal.acdb
+
 # Audio libraries
 etc/drc/drc_cfg_AZ.txt
 vendor/lib64/soundfx/libqcbassboost.so
