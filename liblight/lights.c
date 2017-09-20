@@ -41,75 +41,38 @@ static struct light_state_t g_attention;
 static struct light_state_t g_notification;
 static struct light_state_t g_battery;
 
-char const*const RED_LED_FILE
-        = "/sys/class/leds/led:rgb_red/brightness";
+#define LCD_BRIGHTNESS_FILE "/sys/class/leds/lcd-backlight/brightness"
 
-char const*const GREEN_LED_FILE
-        = "/sys/class/leds/led:rgb_green/brightness";
+#define RED_LED_FILE "/sys/class/leds/led:rgb_red/brightness"
+#define GREEN_LED_FILE "/sys/class/leds/led:rgb_green/brightness"
+#define BLUE_LED_FILE "/sys/class/leds/led:rgb_blue/brightness"
 
-char const*const BLUE_LED_FILE
-        = "/sys/class/leds/led:rgb_blue/brightness";
+#define RED_DUTY_PCTS_FILE "/sys/class/leds/led:rgb_red/duty_pcts"
+#define GREEN_DUTY_PCTS_FILE "/sys/class/leds/led:rgb_green/duty_pcts"
+#define BLUE_DUTY_PCTS_FILE "/sys/class/leds/led:rgb_blue/duty_pcts"
 
-char const*const LCD_FILE
-        = "/sys/class/leds/lcd-backlight/brightness";
+#define RED_START_IDX_FILE "/sys/class/leds/led:rgb_red/start_idx"
+#define GREEN_START_IDX_FILE "/sys/class/leds/led:rgb_green/start_idx"
+#define BLUE_START_IDX_FILE "/sys/class/leds/led:rgb_blue/start_idx"
 
-char const*const RED_DUTY_PCTS_FILE
-        = "/sys/class/leds/led:rgb_red/duty_pcts";
+#define RED_PAUSE_LO_FILE "/sys/class/leds/led:rgb_red/pause_lo"
+#define GREEN_PAUSE_LO_FILE "/sys/class/leds/led:rgb_green/pause_lo"
+#define BLUE_PAUSE_LO_FILE "/sys/class/leds/led:rgb_blue/pause_lo"
 
-char const*const GREEN_DUTY_PCTS_FILE
-        = "/sys/class/leds/led:rgb_green/duty_pcts";
+#define RED_PAUSE_HI_FILE "/sys/class/leds/led:rgb_red/pause_hi"
+#define GREEN_PAUSE_HI_FILE "/sys/class/leds/led:rgb_green/pause_hi"
+#define BLUE_PAUSE_HI_FILE "/sys/class/leds/led:rgb_blue/pause_hi"
 
-char const*const BLUE_DUTY_PCTS_FILE
-        = "/sys/class/leds/led:rgb_blue/duty_pcts";
+#define RED_RAMP_STEP_MS_FILE "/sys/class/leds/led:rgb_red/ramp_step_ms"
+#define GREEN_RAMP_STEP_MS_FILE "/sys/class/leds/led:rgb_green/ramp_step_ms"
+#define BLUE_RAMP_STEP_MS_FILE "/sys/class/leds/led:rgb_blue/ramp_step_ms"
 
-char const*const RED_START_IDX_FILE
-        = "/sys/class/leds/led:rgb_red/start_idx";
-
-char const*const GREEN_START_IDX_FILE
-        = "/sys/class/leds/led:rgb_green/start_idx";
-
-char const*const BLUE_START_IDX_FILE
-        = "/sys/class/leds/led:rgb_blue/start_idx";
-
-char const*const RED_PAUSE_LO_FILE
-        = "/sys/class/leds/led:rgb_red/pause_lo";
-
-char const*const GREEN_PAUSE_LO_FILE
-        = "/sys/class/leds/led:rgb_green/pause_lo";
-
-char const*const BLUE_PAUSE_LO_FILE
-        = "/sys/class/leds/led:rgb_blue/pause_lo";
-
-char const*const RED_PAUSE_HI_FILE
-        = "/sys/class/leds/led:rgb_red/pause_hi";
-
-char const*const GREEN_PAUSE_HI_FILE
-        = "/sys/class/leds/led:rgb_green/pause_hi";
-
-char const*const BLUE_PAUSE_HI_FILE
-        = "/sys/class/leds/led:rgb_blue/pause_hi";
-
-char const*const RED_RAMP_STEP_MS_FILE
-        = "/sys/class/leds/led:rgb_red/ramp_step_ms";
-
-char const*const GREEN_RAMP_STEP_MS_FILE
-        = "/sys/class/leds/led:rgb_green/ramp_step_ms";
-
-char const*const BLUE_RAMP_STEP_MS_FILE
-        = "/sys/class/leds/led:rgb_blue/ramp_step_ms";
-
-char const*const RED_BLINK_FILE
-        = "/sys/class/leds/led:rgb_red/blink";
-
-char const*const GREEN_BLINK_FILE
-        = "/sys/class/leds/led:rgb_green/blink";
-
-char const*const BLUE_BLINK_FILE
-        = "/sys/class/leds/led:rgb_blue/blink";
+#define RED_BLINK_FILE "/sys/class/leds/led:rgb_red/blink"
+#define GREEN_BLINK_FILE "/sys/class/leds/led:rgb_green/blink"
+#define BLUE_BLINK_FILE "/sys/class/leds/led:rgb_blue/blink"
 
 #define RAMP_SIZE 8
-static int BRIGHTNESS_RAMP[RAMP_SIZE]
-        = { 0, 12, 25, 37, 50, 72, 85, 100 };
+static int BRIGHTNESS_RAMP[RAMP_SIZE] = {0, 12, 25, 37, 50, 72, 85, 100};
 #define RAMP_STEP_DURATION 50
 
 /**
@@ -190,7 +153,7 @@ set_light_backlight(struct light_device_t* dev,
         return -1;
     }
     pthread_mutex_lock(&g_lock);
-    err = write_int(LCD_FILE, brightness);
+    err = write_int(LCD_BRIGHTNESS_FILE, brightness);
     pthread_mutex_unlock(&g_lock);
     return err;
 }
