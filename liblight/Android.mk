@@ -1,4 +1,4 @@
-# Copyright (C) 2014 The CyanogenMod Project
+# Copyright (C) 2017 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,9 +13,13 @@
 # limitations under the License.
 
 LOCAL_PATH:= $(call my-dir)
-# HAL module implemenation stored in
+# HAL module implementation stored in
 # hw/<COPYPIX_HARDWARE_MODULE_ID>.<ro.board.platform>.so
 include $(CLEAR_VARS)
+
+ifeq ($(TARGET_LIGHTS_ONLY_RED_LED),true)
+    LOCAL_CFLAGS += -DLIGHTS_ZUK_ONLY_RED_LED
+endif
 
 LOCAL_SRC_FILES := lights.c
 LOCAL_MODULE_RELATIVE_PATH    := hw

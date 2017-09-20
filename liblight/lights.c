@@ -43,6 +43,8 @@ static struct light_state_t g_battery;
 
 #define LCD_BRIGHTNESS_FILE "/sys/class/leds/lcd-backlight/brightness"
 
+#define RED_MAX_BRIGHTNESS_FILE "/sys/class/leds/led:rgb_red/max_brightness"
+
 #define RED_LED_FILE "/sys/class/leds/led:rgb_red/brightness"
 #define GREEN_LED_FILE "/sys/class/leds/led:rgb_green/brightness"
 #define BLUE_LED_FILE "/sys/class/leds/led:rgb_blue/brightness"
@@ -179,10 +181,27 @@ get_scaled_duty_pcts(int brightness)
 }
 
 static int
+read_int(char const *path)
+{
+    int fd;
+    char buffer[4];
+
+    fd = open(path, O_RDONLY);
+
+    if (fd >= 0) {
+        read(fd, buffer, 4);
+    }
+    close(fd);
+
+    return atoi(buffer);
+}
+
+
+static int
 set_speaker_light_locked(struct light_device_t* dev,
         struct light_state_t const* state)
 {
-    int red, green, blue, blink;
+    int red, green, blue, blink, maxRed;
     int onMS, offMS, stepDuration, pauseHi;
     unsigned int colorRGB;
     char *duty;
@@ -216,6 +235,16 @@ set_speaker_light_locked(struct light_device_t* dev,
         blue = (blue * 171) / 256;
     }
     blink = onMS > 0 && offMS > 0;
+ 
+#ifdef LIGHTS_ZUK_ONLY_RED_LED
+    maxRed = read_int(RED_MAX_BRIGHTNESS_FILE);
+    red += blue + green;
+    if (red > maxRed){
+        red = maxRed;
+    }
+    green = blue = 0;
+    ALOGV("set_speaker_light_locked maxRed=%d, red=%d, green=%d, blue=%d\n", maxRed, red, green, blue);
+#endif
 
     // disable all blinking to start
     write_int(RED_BLINK_FILE, 0);
