@@ -36,6 +36,7 @@
 
 # Timekeep
 /system/bin/timekeep                                            u:object_r:timekeep_exec:s0
+/sys/devices/soc/qpnp-rtc-8/rtc/rtc0/since_epoch                u:object_r:sysfs_timekeep:s0  
 
 # Audio PA
 /dev/tfa9890 							u:object_r:audio_device:s0

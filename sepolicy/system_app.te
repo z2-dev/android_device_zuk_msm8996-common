@@ -1,8 +1,11 @@
+set_prop(system_app, timekeep_prop)
+
 allow system_app proc_touchpanel:dir search;
 allow system_app proc_touchpanel:file rw_file_perms;
 
 allow system_app sysfs_fpc_proximity:file rw_file_perms;
 allow system_app fingerprintd:binder call;
 
-allow system_app time_data_file:file rw_file_perms;
-set_prop(system_app, timekeep_prop)
+r_dir_file(system_app, sysfs_timekeep)
+allow system_app timekeep_data_file:dir { create_dir_perms search };
+allow system_app timekeep_data_file:file create_file_perms;

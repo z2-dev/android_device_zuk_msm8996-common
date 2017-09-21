@@ -1,4 +1,5 @@
+get_prop(shell, timekeep_prop)
+
 allow shell rfs_system_file:dir getattr;
 allow shell proc_stat:file read;
 allow shell su_exec:file getattr;
-
