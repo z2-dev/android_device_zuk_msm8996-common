@@ -56,10 +56,6 @@ ro.qcom.ad.sensortype=2
 # Fingerprint
 persist.qfp=false
 
-# Flip panel
-persist.panel.inversemounted=1
-ro.panel.mountflip=3
-
 # Google
 ro.opa.eligible_device=true
 
@@ -127,6 +123,3 @@ persist.data.df.dev_name=rmnet_usb0
 
 # Storage
 ro.sys.sdcardfs=true
-
-# TimeService
-persist.timed.enable=true
