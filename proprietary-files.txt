@@ -484,9 +484,6 @@ vendor/lib64/libimscamera_jni.so
 vendor/lib64/librcc.so
 vendor/lib64/libvoice-svc.so
 
-# Init (move to device!)
-etc/init.qcom.post_boot.sh
-
 # IPA
 bin/ipacm-diag
 
