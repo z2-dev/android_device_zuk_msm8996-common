@@ -67,6 +67,7 @@ ro.panel.mountflip=3
 ro.opa.eligible_device=true
 
 # Graphics
+ro.sf.lcd_density=480
 debug.gralloc.enable_fb_ubwc=1
 persist.hwc.enable_vds=1
 ro.opengles.version=196610
