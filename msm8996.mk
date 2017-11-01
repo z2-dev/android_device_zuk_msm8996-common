@@ -121,7 +121,9 @@ PRODUCT_COPY_FILES += \
  
 # Camera
 PRODUCT_PACKAGES += \
-    Snap
+    Snap \
+    org.codeaurora.camera \
+    org.codeaurora.camera.xml
 
 # Connectivity Engine support (CNE)
 PRODUCT_PACKAGES += \
