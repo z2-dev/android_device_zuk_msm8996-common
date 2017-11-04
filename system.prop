@@ -32,8 +32,12 @@ ro.bluetooth.dun=true
 
 # Camera
 media.camera.ts.monotonic=0
+persist.camera.imglib.fddsp=1
+persist.camera.llc=1
+persist.camera.llnoise=1
 persist.camera.stats.test=5
 camera.disable_zsl_mode=1
+persist.camera.gyro.disable=0
 
 # CNE
 persist.cne.feature=1
