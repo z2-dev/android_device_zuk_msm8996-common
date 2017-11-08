@@ -15,10 +15,17 @@
 <!-- Camera app resources that may need to be customized
      for different hardware or product builds. -->
 <resources>
-    
-    <!-- Opens back camera using openLegacy() and forces api v1 -->
-    <bool name="back_camera_open_legacy">false</bool>
+    <!-- Restart preview for back camera onPictureTaken -->
+    <bool name="back_camera_restart_preview_onPictureTaken">true</bool>
 
-    <!-- Opens front camera using openLegacy() and forces api v1 -->
-    <bool name="front_camera_open_legacy">false</bool>
+    <!-- Restart preview for front camera onPictureTaken -->
+    <bool name="front_camera_restart_preview_onPictureTaken">true</bool>
+
+    <!-- Restart preview when manual iso is used -->
+    <bool name="manual_iso_restart_preview_onPictureTaken">true</bool>
+
+    <!-- Auto HDR -->
+    <string name="pref_camera_feature_hdr_auto" translatable="false">hdr-auto</string>
+    <string name="pref_camera_scenemode_entry_hdr_auto">Auto HDR</string>
+
 </resources>

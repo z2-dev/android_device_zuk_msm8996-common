@@ -22,8 +22,13 @@
 <resources>
     <!-- HDR needs 1x frame -->
     <string name="pref_camera_hdr_need_1x_default" translatable="false">false</string>
-    
-    <!-- Zero shutter lag -->
-    <string name="pref_camera_zsl_default" translatable="false">off</string>
-    
+
+    <!-- Default auto exposure setting. Do not translate. -->
+    <string name="pref_camera_autoexposure_default">center-weighted</string>
+
+    <!-- Default face  detection setting. -->
+    <string name="pref_camera_facedetection_default" translatable="false">on</string>
+
+    <!-- Default noise reduction setting. Do not translate. -->
+    <string name="pref_camera_noise_reduction_default">high-quality</string>
 </resources>
