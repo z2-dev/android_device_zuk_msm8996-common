@@ -666,6 +666,8 @@ vendor/lib64/sensors.ssc.so
 bin/ssr_setup
 
 # Thermal
+vendor/bin/thermal-engine
+vendor/lib64/libthermalioctl.so
 -vendor/lib64/libthermalclient.so
 -vendor/lib/libthermalclient.so
 
