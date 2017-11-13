@@ -322,6 +322,9 @@ on boot
     # change this when HAL3 is working
     setprop persist.camera.HAL3.enabled 0
 
+    # disable camera's gyro as soon as possible
+    setprop persist.camera.gyro.disable 1
+
 # msm specific files that need to be created on /data
 on post-fs-data
     mkdir /tombstones/modem 0771 system system
