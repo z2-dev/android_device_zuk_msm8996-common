@@ -101,7 +101,6 @@ lib/hw/camera.msm8996.so
 lib/libmm-qcamera.so
 lib/libmmcamera_interface.so
 lib/libmmjpeg_interface.so
-lib/libmm-omxcore.so
 lib/libqomx_core.so
 vendor/lib/libarcsoft_beautyshot.so
 vendor/lib/libchromaflash.so
@@ -462,7 +461,6 @@ bin/ims_rtp_daemon
 bin/imscmservice
 bin/imsdatadaemon
 bin/imsqmidaemon
-lib/libextmedia_jni.so
 -vendor/app/ims/ims.apk
 -vendor/app/imssettings/imssettings.apk
 vendor/lib64/lib-dplmedia.so
