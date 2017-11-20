@@ -138,7 +138,8 @@ on property:dev.bootcomplete=1
 
 service charger /charger
     class charger
-    group log
+    critical
+    group log system graphics
     seclabel u:r:healthd:s0
     writepid /dev/cpuset/system-background/tasks
 
