@@ -1,7 +1,6 @@
 on early-init
     # Enable sched boost
     write /proc/sys/kernel/sched_boost 1
-    setprop sys.io.scheduler noop
 
 on boot
     # Update foreground and background cpusets
