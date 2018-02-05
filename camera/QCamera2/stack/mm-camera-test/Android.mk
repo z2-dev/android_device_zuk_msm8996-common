@@ -43,7 +43,7 @@ LOCAL_C_INCLUDES+= \
         $(LOCAL_PATH)/../../../mm-image-codec/qomx_core
 
 LOCAL_C_INCLUDES+= $(kernel_includes)
-LOCAL_ADDITIONAL_DEPENDENCIES := $(common_deps)
+LOCAL_HEADER_LIBRARIES := device_kernel_headers
 
 LOCAL_CFLAGS += -DCAMERA_ION_HEAP_ID=ION_IOMMU_HEAP_ID
 ifeq ($(TARGET_BOARD_PLATFORM),msm8974)
@@ -137,7 +137,7 @@ LOCAL_C_INCLUDES+= \
         $(LOCAL_PATH)/../../../mm-image-codec/qomx_core
 
 LOCAL_C_INCLUDES+= $(kernel_includes)
-LOCAL_ADDITIONAL_DEPENDENCIES := $(common_deps)
+LOCAL_HEADER_LIBRARIES := device_kernel_headers
 
 LOCAL_CFLAGS += -DCAMERA_ION_HEAP_ID=ION_IOMMU_HEAP_ID
 ifeq ($(TARGET_BOARD_PLATFORM),msm8974)

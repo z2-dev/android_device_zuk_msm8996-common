@@ -23,7 +23,7 @@ LOCAL_C_INCLUDES += \
     $(LOCAL_PATH)/../inc
 
 LOCAL_C_INCLUDES+= $(kernel_includes)
-LOCAL_ADDITIONAL_DEPENDENCIES := $(common_deps)
+LOCAL_HEADER_LIBRARIES := device_kernel_headers
 
 LOCAL_SRC_FILES := mm_lib2d_test.c
 
