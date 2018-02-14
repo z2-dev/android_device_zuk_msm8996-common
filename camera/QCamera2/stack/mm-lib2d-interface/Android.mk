@@ -10,7 +10,7 @@ LOCAL_CFLAGS+= -D_ANDROID_ -DQCAMERA_REDEFINE_LOG
 LOCAL_CFLAGS += -Wall -Wextra -Werror -Wno-unused-parameter
 
 LOCAL_C_INCLUDES+= $(kernel_includes)
-LOCAL_HEADER_LIBRARIES := device_kernel_headers
+LOCAL_ADDITIONAL_DEPENDENCIES := $(common_deps)
 
 IMGLIB_HEADER_PATH := $(TARGET_OUT_INTERMEDIATES)/include/mm-camera/imglib
 
